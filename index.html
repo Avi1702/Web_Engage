@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebEngage</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div id="main">
+
+        <div id="left"></div>
+        
+        <div id="right">
+            <div class="logo"></div>
+            <div>
+                <h1>Get a Free </h1>
+                <p>consultation with an expert</p>
+            </div>
+            <div class="equal_size">
+                <input id="email" name="email" type="email" placeholder="Enter your email" oninput="setEmail()" required />
+                <br/>
+            </div>
+            <div class="phoneNumber">
+                <select id="code" style="height: 20%;" onchange="setCode()">
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+61">+61</option>
+                    <option value="+880">+880</option>
+                    <option value="1-444">1-444</option>
+                    <option value="+7">+7</option>
+                    <option value="+86">+86</option>
+                    <option value="+81">+81</option>
+                    <option value="+850">+850</option>
+                    <option value="+49">+49</option>
+
+                </select>
+             <input id="number" name="number" type="number" placeholder="Enter your mobile" style="border: none;width: 70%;" oninput="setNumber()" required> </input>
+            </div>
+            <div class="equal_size">
+                <button onclick="submit()" style="height:50%;color: white;background-color: black;">Talk to us</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./index.js"></script>
